@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zenuxs Plugins</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #0e0e0e;
+      background-color: #121212;
       color: #e0fefe;
+      line-height: 1.6;
     }
 
     header, footer {
-      background-color: #0a0a0a;
+      background-color: #1a1a1a;
+      color: #00ffff;
       padding: 20px;
       text-align: center;
       border-bottom: 2px solid #00ffff;
@@ -23,25 +25,20 @@
       color: #00ffff;
     }
 
-    nav a {
-      margin: 0 10px;
+    a {
       color: #00ffff;
       text-decoration: none;
       font-weight: bold;
     }
 
-    nav a:hover {
+    a:hover {
       text-decoration: underline;
     }
 
-    main {
+    .content {
       padding: 20px;
       max-width: 900px;
       margin: auto;
-    }
-
-    section {
-      margin-bottom: 40px;
     }
 
     ul {
@@ -50,65 +47,104 @@
     }
 
     li {
-      background: #1e1e1e;
+      background-color: #222222;
       margin: 10px 0;
       padding: 15px;
       border-left: 5px solid #00ffff;
     }
 
-    a.button {
+    section {
+      margin-bottom: 40px;
+    }
+
+    .repo-info {
+      background-color: #1a1a1a;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      border: 2px solid #00ffff;
+    }
+
+    footer p {
+      font-size: 0.9em;
+    }
+
+    .button {
       display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
       background-color: #00ffff;
-      color: #0e0e0e;
+      color: #121212;
+      padding: 10px 20px;
       text-decoration: none;
       font-weight: bold;
       border-radius: 4px;
+      margin-top: 20px;
     }
 
-    a.button:hover {
+    .button:hover {
       background-color: #00cccc;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Zenuxs Plugins</h1>
-    <p>High-performance Minecraft plugins for PvP and custom gameplay.</p>
-    <nav>
-      <a href="#plugins">Plugins</a>
-      <a href="https://discord.zenuxs.xyz" target="_blank">Discord</a>
-      <a href="https://github.com/developer-rs5/Zenuxs-Plugins" target="_blank">GitHub</a>
-    </nav>
+    <p>Official repository for Zenuxs Minecraft plugins – BuildFFA, Orbs, and more.</p>
   </header>
 
-  <main>
-    <section id="plugins">
+  <div class="content">
+    <section>
       <h2>Featured Plugins</h2>
       <ul>
         <li>
           <h3>BuildFFA v1.7</h3>
-          <p>Custom PvP arenas, kit selection, and real-time stats for competitive gameplay.</p>
-          <a class="button" href="#">Learn More</a>
+          <p>An advanced PvP plugin with arenas, kit selection, and stats tracking.</p>
+          <a href="#" class="button">Learn More</a>
         </li>
         <li>
           <h3>Orbs Plugin v1.3</h3>
-          <p>Unlock elemental powers like Fire, Water, Air, and Earth with unique cooldowns and effects.</p>
-          <a class="button" href="#">Learn More</a>
+          <p>A premium elemental plugin that lets players harness the powers of fire, water, air, earth, and more.</p>
+          <a href="#" class="button">Learn More</a>
         </li>
       </ul>
     </section>
 
     <section>
-      <h2>Need Support or Custom Plugins?</h2>
-      <p>Join our community and get help or order your custom plugin:</p>
-      <a class="button" href="https://discord.zenuxs.xyz" target="_blank">Join Our Discord</a>
+      <h2>Installation Guide</h2>
+      <p>Follow these steps to install any plugin:</p>
+      <ol>
+        <li>Download the plugin `.jar` file for your desired plugin.</li>
+        <li>Place the `.jar` file into your server's `/plugins` directory.</li>
+        <li>Restart or reload the server.</li>
+        <li>Modify the plugin settings through the config file if needed.</li>
+      </ol>
     </section>
-  </main>
+
+    <section>
+      <h2>Support & Customization</h2>
+      <p>Need help or want a custom plugin made? Join our community:</p>
+      <a href="https://discord.zenuxs.xyz" target="_blank" class="button">Join Our Discord</a>
+    </section>
+
+    <section class="repo-info">
+      <h2>Credits</h2>
+      <p><strong>Rishabh</strong> – Founder & Lead Developer</p>
+      <p><strong>Aditya</strong> – Manager</p>
+      <p><strong>Savio (SPG)</strong> – Developer</p>
+      <p><strong>Envisor (Zeplin)</strong> – Developer</p>
+    </section>
+
+    
+
+    <section>
+      <h2>Contributing</h2>
+      <p>We welcome suggestions, issues, and pull requests. Help us improve and expand our plugin ecosystem!</p>
+    </section>
+  </div>
 
   <footer>
     <p>&copy; 2025 Zenuxs. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
